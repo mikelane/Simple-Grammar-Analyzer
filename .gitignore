@@ -4,3 +4,11 @@
 *.xml
 
 .idea/untitled.iml
+
+*.aux
+
+*.log
+
+*.tex
+
+*.gz
