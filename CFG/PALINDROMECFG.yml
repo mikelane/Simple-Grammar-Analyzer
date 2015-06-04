@@ -1,0 +1,21 @@
+###
+#
+# Mike Lane, CS311, 3 June 2015
+#
+# This is the YAML encoding of {w#w^R | w∈{0, 1}^*}
+#
+
+--- |
+  --- !ruby/object:CFG
+  description: PALINDROMECFG = {w#w^R | w∈{0, 1}^*}
+  variables:
+  - S
+  sigma:
+  - '0'
+  - '1'
+  - "#"
+  relations:
+  - S→0S0
+  - S→1S1
+  - S→#
+  start_variable: S

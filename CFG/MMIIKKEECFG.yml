@@ -1,0 +1,29 @@
+--- |
+  --- !ruby/object:CFG
+  description: MMIIKKEECFG = { M^n < I^n ^ K^n > E^n v | n > 0 }
+  variables:
+  - S
+  - T
+  - U
+  - V
+  - W
+  sigma:
+  - M
+  - I
+  - K
+  - E
+  - "<"
+  - "^"
+  - ">"
+  - v
+  relations:
+  - S→MTIUKVEW
+  - T→MT
+  - T→<
+  - U→IU
+  - U→^
+  - V→KV
+  - V→>
+  - W→EW
+  - W→v
+  start_variable: S

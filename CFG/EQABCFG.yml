@@ -1,0 +1,20 @@
+###
+#
+# Mike Lane, CS311, 3 June 2015
+#
+# This is the YAML encoding of {a^n#b^n | n > 0}
+#
+
+--- |
+  --- !ruby/object:CFG
+  description: EQABCFG = {a^n#b^n | n > 0}
+  variables:
+  - S
+  sigma:
+  - a
+  - b
+  - "#"
+  relations:
+  - S→aSb
+  - S→#
+  start_variable: S

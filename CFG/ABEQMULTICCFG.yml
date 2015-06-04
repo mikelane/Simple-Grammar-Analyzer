@@ -1,0 +1,28 @@
+###
+#
+# Mike Lane, CS311, 3 June 2015
+#
+# This is the YAML encoding of {a^i#b^j#c^k# | i = j and i,j,k > 0}
+#
+
+--- |
+  --- !ruby/object:CFG
+  description: ABEQMULTICCFG = {a^i#b^j#c^k# | i = j and i, j, k > 0}
+  variables:
+  - S
+  - X
+  - Y
+  - Z
+  sigma:
+  - a
+  - b
+  - c
+  - "#"
+  relations:
+  - S→aXbY
+  - X→aXb
+  - X→#
+  - Y→#cZ
+  - Z→cZ
+  - Z→#
+  start_variable: S

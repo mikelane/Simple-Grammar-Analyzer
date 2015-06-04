@@ -1,0 +1,12 @@
+--- |
+  --- !ruby/object:CFG
+  description: "POOLINDROMECFG = {\U0001F4A9^n#\U0001F4A9^n | n>0 }"
+  variables:
+  - S
+  sigma:
+  - "\U0001F4A9"
+  - "#"
+  relations:
+  - "S→\U0001F4A9S\U0001F4A9"
+  - "S→#"
+  start_variable: S
