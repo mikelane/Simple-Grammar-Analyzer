@@ -10,11 +10,13 @@
   description: EQABCFG = {a^n#b^n | n > 0}
   variables:
   - S
+  - T
   sigma:
   - a
   - b
   - "#"
   relations:
-  - S→aSb
-  - S→#
+  - S→aTb
+  - T→aTb
+  - T→#
   start_variable: S
